@@ -151,7 +151,7 @@ void mousePressed()
   }
 }
 boolean intersects(int birdX, int birdY, int rectX, int rectY, int rectLength) {
-if (birdY > rectY && birdY < rectY + rectLength && birdX > rectX)
+if (birdY + (birdheight/2) > rectY && birdY - (birdheight/2) < rectY + rectLength && birdX + (birdwidth/2) - 20 > rectX)
 {
 return true;
 }
